@@ -1,11 +1,3 @@
-// let page_links=document.querySelectorAll('.links')
-// for(let link of page_links){
-//     link.addEventListener("click",()=>{
-//         page_links.forEach(lnk=> lnk.classList.remove('active-link'))
-//         link.classList.add('active-link')
-//     })
-// }
-
 let isScrolled = false;
 let nav=document.querySelector('.nav')
 
@@ -28,4 +20,6 @@ window.addEventListener('load', function() {
     window.scrollTo(0, 0);
 });
 
-  
+function handleSubmit(e){
+  e.preventDefault();
+}
